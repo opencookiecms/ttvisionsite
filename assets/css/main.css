@@ -22,6 +22,8 @@ Index Of css
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
 html {
   scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
 }
 
 body {
@@ -30,6 +32,8 @@ body {
   font-style: normal;
   color: #6A7C92;
   overflow-x: hidden;
+  height: 100%;
+  width: 100%;
 }
 
 * {
@@ -165,7 +169,7 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
+  
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -785,23 +789,72 @@ p {
 .hero-section {
   padding-top: 100px;
   position: relative;
-  height: 870px;
+  
   display: flex;
   align-items: center;
   background-image: url(../img/bg/about_us_bg.jpeg);
+  -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+
 }
 
 @media only screen and (min-width: 1400px) {
   .hero-section {
-    height: 870px;
+    padding-top:70px;
+    height: 100%;
   }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .hero-section {
-    height: 700px;
+    padding-top:70px;
+    height: 100%;
   }
 }
+
+
+@media only screen and (min-width: 1400px) {
+  .subscribe-section {
+    
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .subscribe-section {
+    
+    height: 280px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .subscribe-section {
+    height: 0px;
+ 
+  }
+}
+
+
+@media only screen and (min-width: 1400px) {
+  .contact-section {
+    
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .contact-section {
+    
+    height: 400px;
+  }
+}
+
+
+
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .hero-section {
@@ -978,7 +1031,7 @@ p {
   border-radius: 10px;
   margin-bottom: 30px;
   transition: all 0.3s ease-out 0s;
-  height: 300px;
+
 }
 
 .box-style:hover {
@@ -3191,3 +3244,81 @@ p {
 .pb-225 {
   padding-bottom: 225px;
 }
+
+
+
+@media (min-width: 576px) {
+  .rounded-nav {
+    border-radius: 50rem !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .rounded-nav .nav-link {
+    border-radius: 50rem !important;
+  }
+}
+
+/* With arrow tabs */
+
+.with-arrow .nav-link.active {
+  position: relative;
+}
+
+.with-arrow .nav-link.active::after {
+  content: '';
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #2b90d9;
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+
+/* lined tabs */
+
+.lined .nav-link {
+  border: none;
+  border-bottom: 3px solid transparent;
+}
+
+.lined .nav-link:hover {
+  border: none;
+  border-bottom: 3px solid transparent;
+}
+
+.lined .nav-link.active {
+  background: none;
+  color: #555;
+  border-color: #2b90d9;
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSE
+* ==========================================
+*
+*/
+
+.nav-pills .nav-link {
+  color: #555;
+}
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
+.productimage{
+  display: block;
+    margin: 0 auto;
+}
+
+.productimage img{
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+
+ 
+}
+
